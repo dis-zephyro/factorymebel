@@ -21,6 +21,9 @@ $font-roboto     :   'Roboto', sans-serif;
 @import "components/forms";
 @import "components/responsive-embed";
 
+@import "../js/vendor/slick/slick";
+@import "font-awesome/font-awesome";
+
 
 @import "block01";
 @import "block02";
@@ -28,6 +31,10 @@ $font-roboto     :   'Roboto', sans-serif;
 @import "block04";
 @import "block05";
 @import "block06";
+@import "block07";
+@import "block08";
+@import "block09";
+@import "block10";
 
 
 /* Base styles
@@ -67,10 +74,16 @@ body {
 h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
-    font-weight: 400;
 }
 
-
+h2 {
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: $font-heavy;
+    text-transform: uppercase;
+}
 
 p {
     padding: 0;

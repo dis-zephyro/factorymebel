@@ -1,0 +1,78 @@
+.b05 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #f3f0e9;
+
+	h2 {
+		color: #4d2f2a;
+		font-size: 41px;
+		line-height: 50px;
+		margin-bottom: 40px;
+	}
+
+	.reply {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			width: 278px;
+			margin-left: 50px;
+		}
+
+		.reply__inner {
+			width: 215px;
+			text-align: center;
+		}
+
+		.reply__avatar {
+			width: 130px;
+			height: 130px;
+			margin: 0 auto 15px auto;
+		}
+
+		.reply__author {
+			color: #4d2f2a;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 20px;
+			margin-bottom: 20px;
+
+			span {
+				display: block;
+				font-size: 17px;
+				font-weight: 700;
+				font-style: italic;
+			}
+		}
+
+		.reply__box {
+			width: 278px;
+			height: 338px;
+			padding: 40px 0 0 28px;
+			background: url("../img/reply_bg.png") 0 0 no-repeat;
+		}
+
+		.reply__item {
+			width: 162px;
+			height: 212px;
+			overflow: hidden;
+			position: relative;
+
+			a {
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				cursor: pointer;
+				position: absolute;
+				background: transparent;
+
+				&:hover {
+					background: rgba(64,64,64, 0.7) url("../img/icon_loop.png") 50% 50% no-repeat;
+				}
+			}
+		}
+	}
+}

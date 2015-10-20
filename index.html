@@ -11,11 +11,13 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/vendor/jquery.smoothDivScroll/css/smoothDivScroll.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     
     <body>
+
         <section class="b01">
             <div class="container">
                 <div class="b01__top">
@@ -66,35 +68,330 @@
 
         <section class="b02">
             <div class="container">
-                <h2></h2>
+                <ul class="advantage clearfix">
+                    <li class="item1">
+                        <div class="advantage__text">
+                            <div class="advantage__title">6 лет</div>
+                            <span>Занимается гостиничной<br/>и офисной мебелью.</span>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <div class="advantage__text">
+                            <div class="advantage__title">более 110</div>
+                            <span>Успешно реализованных<br/>проектов.</span>
+                        </div>
+                    </li>
+                    <li class="item3">
+                        <div class="advantage__text">
+                            <div class="advantage__title">Забота</div>
+                            <span>Индивидуальный подход<br/>к каждому клиенту.</span>
+                        </div>
+                    </li>
+                    <li class="item4">
+                        <div class="advantage__text">
+                            <div class="advantage__title"></div>
+                            <span>Собственное производство,<br/>работаем без посредников.</span>
+                        </div>
+                    </li>
+                </ul>
+                <h2>Продукция нашей компании</h2>
+            </div>
+
+            <div class="product-block">
+                <div class="container">
+                    <div class="product office pull-left">
+                        <div class="product__title">Для офиса</div>
+                        <ul class="clearfix">
+                            <li>
+                                <a rel="office" href="images/office01.jpg">
+                                    <img src="images/office01.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a rel="office" href="images/office01.jpg">
+                                    <img src="images/office01.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a rel="office" href="images/office01.jpg">
+                                    <img src="images/office01.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="nav nav-prev"></span>
+                        <span class="nav nav-next"></span>
+                    </div>
+                    <div class="product hotel pull-right">
+                        <div class="product__title">Для гостиниц</div>
+                        <ul class="clearfix">
+                            <li>
+                                <a rel="hotel" href="images/hotel01.jpg">
+                                    <img src="images/hotel01.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a rel="hotel" href="images/hotel01.jpg">
+                                    <img src="images/hotel01.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a rel="hotel" href="images/hotel01.jpg">
+                                    <img src="images/hotel01.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="nav nav-prev"></span>
+                        <span class="nav nav-next"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title-more">и ЭТО ДАЛЕКО НЕ ВСЕ</div>
+                <div class="sub-title">Получите полный каталог нашей продукции прямо сейчас</div>
+                <div class="clearfix">
+                    <a href="#" class="btn btn-green btn-office btn-modal pull-left">Получить каталог для офисов</a>
+                    <a href="#" class="btn btn-green btn-hotel btn-modal pull-right">Получить каталог для гостиниц</a>
+                </div>
             </div>
         </section>
 
         <section class="b03">
             <div class="container">
-                <h2></h2>
+                <h2>Собственное производство</h2>
+                <div class="b03__text">Позволяет нам делать Вам выгодные предложния, и отслеживать качество продукции на каждом этапе производства</div>
+                <ul class="production clearfix">
+                    <li>
+                        <img class="img-responsive" src="img/b03_item1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img class="img-responsive" src="img/b03_item2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img class="img-responsive" src="img/b03_item3.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="treatment clearfix">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    <p>При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце.</p>
+                    <div class="treatment__author">
+                        <span>Василий Иванович</span>
+                        Директор производства
+                    </div>
+                </div>
+                <div class="b03__title">Вы можете сами убедится в этом</div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-green btn-modal text-upp">посетить производство</a>
+                </div>
             </div>
         </section>
 
         <section class="b04">
-            <div class="container">
-                <h2></h2>
-            </div>
+            <h2>Клиенты нашей компании</h2>
+            <ul class="partners clearfix" id="makeMeScrollable">
+                <li>
+                    <img src="images/partners/logo01.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo02.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo03.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo04.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo05.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo06.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo07.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo08.png" alt="">
+                </li>
+                <li>
+                    <img src="images/partners/logo09.png" alt="">
+                </li>
+            </ul>
         </section>
 
         <section class="b05">
             <div class="container">
-                <h2></h2>
+                <h2>Вот что о нас го ворят наши заказчики</h2>
+                <ul class="reply clearfix">
+                    <li>
+                        <div class="reply__inner">
+                            <div class="reply__avatar">
+                                <img src="images/reply/avatar01.png" alt="">
+                            </div>
+                            <div class="reply__author">
+                                <span>Сергей Александров,</span>
+                                директор OTIS
+                            </div>
+                        </div>
+                        <div class="reply__box">
+                            <div class="reply__item">
+                                <img src="images/reply/reply01_m.jpg" alt="">
+                                <a href="images/reply/reply01_b.jpg"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="reply__inner">
+                            <div class="reply__avatar">
+                                <img src="images/reply/avatar02.png" alt="">
+                            </div>
+                            <div class="reply__author">
+                                <span>Сергей Александров,</span>
+                                директор OTIS
+                            </div>
+                        </div>
+                        <div class="reply__box">
+                            <div class="reply__item">
+                                <img src="images/reply/reply01_m.jpg" alt="">
+                                <a href="images/reply/reply01_b.jpg"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="reply__inner">
+                            <div class="reply__avatar">
+                                <img src="images/reply/avatar03.png" alt="">
+                            </div>
+                            <div class="reply__author">
+                                <span>Сергей Александров,</span>
+                                директор OTIS
+                            </div>
+                        </div>
+                        <div class="reply__box">
+                            <div class="reply__item">
+                                <img src="images/reply/reply01_m.jpg" alt="">
+                                <a href="images/reply/reply01_b.jpg"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <footer class="footer">
+        <section class="b06">
+            <div class="container">
+                <h2>Мы пониманием, что для Вас<br>качество мебели очень важно</h2>
+                <div class="clearfix">
+                    <div class="column pull-left">
+                        <div class="column__title">Проблемы других компаний</div>
+                        <ul>
+                            <li class="item1">Обычно работают только со своей серийной продукцией, предлагая лишь то, с чего получат максимальную прибыль.</li>
+                            <li class="item2">Осущестляют рабочую деятельность в конкретные часы, вне которых связь невозможна. К сожалению, менеджеры не смогут ответить на Ваш срочный вопрос.</li>
+                            <li class="item3">Почти всегда, оставляют после себя горы мусора, которые приходится убирать.</li>
+                            <li class="item4">Используют фурнитуру, которая врезается прямо в материал изделия. Из-за этого, при вторичной сборке, структура материала разрушается, становится менее крепкой и устойчивой.</li>
+                        </ul>
+                    </div>
+                    <div class="column pull-right">
+                        <div class="column__title">А у нас их нет, потому что…</div>
+                        <ul>
+                            <li class="item5">Кроме собственного производства, имеем огромную сеть аутсорсингов, с которыми работаем на льготных условиях. Вы получаете максимальную прибыль.</li>
+                            <li class="item6">Работаем 7 дней в неделю и 24 часа в сутки. К счастью, наши компетентные менеджеры, в любое время дня и ночи, доступно ответят на любой вопрос.</li>
+                            <li class="item7">Сервис отточен годами. Наши профессионалы не только идеально выполнят свою работу, но и сделают Вам приятный  подарок: оставят после себя порядок и чистоту.</li>
+                            <li class="item8">Используем эксцентрики (специальные крепежи), которые лишь единожды врезаются в материал изделия. Вся фурнитутра вкручивается именно в них, структура материала не разрушается. Благодаря этому, сборку можно осуществлять  многократно, не нарушая прочность и устойчивость.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="b06_text">Оставьте заявку и наш специалист<br/>проконсультирует вас по всем вопросам</div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-orange btn-modal">Получить консультацию бесплатно</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="b07">
+            <div class="container">
+                <h2>КАК мы работаем</h2>
+                <ul class="work clearfix">
+                    <li class="item1">
+                        Вы ставляете заявку<br/>на нашем сайте
+                        <a href="#" class="btn btn-green btn-modal btn-mini">Оставить заявку</a>
+                    </li>
+                    <li class="item2">Наш специалист<br/>связывается с вами<br/>в течении 10 мин.</li>
+                    <li class="item3">Согласовывает<br/>Ваш проект</li>
+                    <li class="item4">Заключаем договор<br/>70% предоплаты</li>
+                    <li class="item5">Итоговый результат<br/>и постоплата 30%</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="b08">
+            <div class="container">
+                <h2>Устали смотреть тысячи фотографий<br/>и десятки различных поставщиков?</h2>
+                <div class="b08__form">
+                    <div class="form-inner">
+                        <div class="form__title">Оставьте заявку в форме ниже<br/>и мы поможем вам найти решение<br/>именно для вашего проекта!</div>
+                        <form class="form" name="form" method="POST" action="javascript:void(0);">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-name" name="name" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-phone" name="phone" placeholder="Введите ваш номер телефона">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-orange btn-submit">Получить</button>
+                            </div>
+                        </form>
+                        <div class="sup">Ваши данные не будут переданны 3-м лицам</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="b09">
+            <div id="map"></div>
+            <div class="b09__content">
+                <div class="container">
+                    <div class="address">
+                        <ul>
+                            <li class="item1">
+                                <i class="fa fa-home"></i>
+                                <span><strong>Адресс:</strong> ЖК Велтон Парк, д. Подолино ул. Лесная д. 4</span>
+                            </li>
+                            <li class="item2">
+                                <i class="fa fa-phone"></i>
+                                <span><strong>Телефон:</strong> +7 (499) 499 40 48</span>
+                            </li>
+                            <li class="item3">
+                                <i class="fa fa-envelope"></i>
+                                <span><strong>E-mail:</strong> info@sitename.ru</span>
+                            </li>
+                            <li class="item4">
+                                <i class="fa fa-clock-o"></i>
+                                <span><strong>Время работы:</strong> с 9:00 до 19:00</span>
+                            </li>
+                        </ul>
+                        <div class="address__bottom">
+                            <span>Есть вопросы?</span>
+                            <a href="#" class="btn btn-orange btn-modal">Задать вопрос</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="b10">
             <div class="container"></div>
-        </footer>
+        </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.8.23.custom.min.js"></script>
+        <script src="js/vendor/jquery.smoothDivScroll/js/jquery.smoothdivscroll-1.3-min.js"></script>
+        <script src="js/vendor/jquery.smoothDivScroll/js/jquery.kinetic.js"></script>
+        <script src="js/vendor/jquery.smoothDivScroll/js/jquery.mousewheel.min.js"></script>
+        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

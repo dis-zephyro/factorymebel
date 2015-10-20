@@ -1,0 +1,81 @@
+.b03 {
+	color: #545454;
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	h2 {
+		color: #4e2f2a;
+		margin-bottom: 10px;
+	}
+
+	.b03__text {
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+
+	.production {
+		padding: 0;
+		list-style: none;
+		margin: 0 -5px 140px -5px;
+
+		li {
+			float: left;
+			width: 33.33%;
+			padding: 0 5px;
+			overflow: hidden;
+		}
+	}
+
+	.treatment {
+		color: #545454;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 18px;
+		position: relative;
+		margin: 0 90px 40px 90px;
+		border: 4px solid #d9b082;
+		padding: 20px 15px 15px 245px;
+
+		&:before {
+			left: 5px;
+			bottom: -4px;
+			width: 214px;
+			height: 352px;
+			content: ' ';
+			position: absolute;
+			background: url("../img/boss_photo.png") 0 0 no-repeat;
+		}
+
+		p {
+			margin-bottom: 15px;
+		}
+
+		.treatment__author {
+			width: 150px;
+			float: right;
+			font-size: 11px;
+			line-height: 16px;
+
+			span {
+				color: #000;
+				display: block;
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.b03__title {
+		height: 170px;
+		color: #4e2f2a;
+		font-size: 41px;
+		line-height: 42px;
+		text-align: center;
+		font-family: $font-heavy;
+		text-transform: uppercase;
+		background: url("../img/arrow_down.png") 50% 52px no-repeat;
+	}
+}
