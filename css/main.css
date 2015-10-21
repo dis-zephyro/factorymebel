@@ -316,6 +316,14 @@ label {
         content: ' ';
         position: absolute;
         background: url("../img/icon_check.png") 0 0 no-repeat; }
+  .modal-box.done {
+    width: 400px;
+    padding-top: 40px; }
+    .modal-box.done .done__text {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 50px;
+      padding-top: 40px; }
 
 .btn_close {
   top: -45px;

@@ -49,10 +49,12 @@
                             <div class="form__title">Заполните заявку</div>
                             <div class="form__text">и узнайте сколько клиентов вы получите с помощью наших Landing page</div>
                             <form class="form" name="form" method="POST" action="javascript:void(0);">
-                                <div class="form-group">
+                                <input type="hidden" name="form" class="hide" value="Заявка на посещение">
+                                <input type="hidden" name="type" class="hide" value="4">
+                                <div class="form-group valid name none required">
                                     <input type="text" class="form-control form-name" name="name" placeholder="Введите ваше имя">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group valid phone none required">
                                     <input type="text" class="form-control form-phone" name="phone" placeholder="Введите ваш номер телефона">
                                 </div>
                                 <div class="form-group">
@@ -483,8 +485,8 @@
                     <span>в форме ниже и наш специалист<br/>сважется с вами</span>
                 </div>
                 <form class="form" name="form" method="POST" action="javascript:void(0);">
-                    <input type="hidden" name="form" class="hide" value="Заявка на посещение">
-                    <input type="hidden" name="type" class="hide" value="2">
+                    <input type="hidden" name="form" class="hide" value="Заявка на высов специалиста">
+                    <input type="hidden" name="type" class="hide" value="3">
                     <div class="form-group valid name none required">
                         <input type="text" class="form-control form-name" name="name" placeholder="Введите ваше имя">
                     </div>
@@ -498,6 +500,12 @@
                 </form>
             </div>
 
+            <!-- Modal Done-->
+            <div class="modal-box done" id="done">
+                <div class="form__title"><span class="rate-platinum">Спасибо</span></div>
+                <div class="done__text">Наш менеджер перезвонит Вам в ближайшее время!</div>
+            </div>
+
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -507,6 +515,7 @@
         <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/vendor/jquery.maskedinput.min.js"></script>
         <script src="js/vendor/jquery-ui-1.8.23.custom.min.js"></script>
+        <script src="js/vendor/validator.js"></script>
         <script src="js/vendor/jquery.smoothDivScroll/js/jquery.smoothdivscroll-1.3-min.js"></script>
         <script src="js/vendor/jquery.smoothDivScroll/js/jquery.kinetic.js"></script>
         <script src="js/vendor/jquery.smoothDivScroll/js/jquery.mousewheel.min.js"></script>

@@ -97,6 +97,19 @@ label {
 			}
 		}
 	}
+
+
+	&.done {
+		width: 400px;
+		padding-top: 40px;
+
+		.done__text {
+			font-size: 30px;
+			text-align: center;
+			margin-bottom: 50px;
+			padding-top: 40px;
+		}
+	}
 }
 
 
