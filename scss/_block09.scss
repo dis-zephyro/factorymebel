@@ -10,15 +10,15 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		bottom: 0;
-		padding-top: 85px;
 		position: absolute;
 	}
 
 	.address {
+		top: 85px;
+		left: 15px;
 		width: 270px;
 		background: #fff;
-		position: relative;
+		position: absolute;
 		@include border-radius(15px);
 		@include box-shadow(0px 5px 15px 0px rgba(0, 0, 0, 0.15));
 

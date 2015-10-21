@@ -1,4 +1,78 @@
 .b10 {
 	height: 320px;
 	background: #fff;
+	padding-top: 30px;
+	font-family: $font-roboto;
+
+	.column {
+		float: left;
+		width: 330px;
+
+		&.pull-right {
+			width: 290px;
+			padding-top: 30px;
+		}
+
+		&.dev {
+			padding-top: 70px;
+		}
+	}
+
+	.b10__logo {
+		margin-bottom: 20px;
+	}
+
+	.copy {
+		color: #161616;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 15px;
+		margin-bottom: 15px;
+	}
+
+	.b10__contact {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			color: #595959;
+			font-size: 14px;
+			font-weight: 300;
+
+			strong {
+				color: #383838;
+				font-weight: 500;
+			}
+
+			&:first-child {
+				color: #383838;
+				font-size: 16px;
+				font-weight: 500;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.call-title {
+		color: #383838;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.b10__tel {
+		color: #000;
+		font-size: 35px;
+		line-height: 40px;
+		margin-bottom: 15px;
+		text-align: center;
+		font-family: $font-heavy;
+	}
+
+	.btn {
+		width: 100%;
+	}
 }

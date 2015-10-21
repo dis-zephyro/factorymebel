@@ -222,6 +222,17 @@
   padding: 8px 15px;
   text-transform: uppercase; }
 
+.btn-micro {
+  height: auto;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-bottom: none; }
+
+.btn-form {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .form-control {
   margin: 0;
   width: 100%;
@@ -266,6 +277,59 @@ label {
 
 .form-group {
   margin-bottom: 10px; }
+
+.modal-box {
+  color: #000;
+  width: 380px;
+  background: #fff;
+  padding: 30px 30px 20px 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+  .modal-box .form__title {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "UniSansHeavyCAPS-Regular"; }
+    .modal-box .form__title span {
+      display: block;
+      font-size: 19px;
+      line-height: 26px; }
+  .modal-box .form__source {
+    margin: 0;
+    padding: 0 0 10px 0;
+    list-style: none; }
+    .modal-box .form__source li {
+      color: #000;
+      font-size: 14px;
+      line-height: 18px;
+      padding-left: 40px;
+      position: relative;
+      margin-bottom: 10px; }
+      .modal-box .form__source li:before {
+        top: 2px;
+        left: 10px;
+        width: 16px;
+        height: 17px;
+        content: ' ';
+        position: absolute;
+        background: url("../img/icon_check.png") 0 0 no-repeat; }
+
+.btn_close {
+  top: -45px;
+  right: -84px;
+  width: 57px;
+  height: 57px;
+  cursor: pointer;
+  position: absolute;
+  background: url("../img/icon_close.png") 0 0 no-repeat; }
+
+.sup {
+  color: #3d3d3d;
+  font-size: 11px;
+  text-align: center; }
 
 .embed-responsive {
   position: relative;
@@ -2477,10 +2541,6 @@ label {
       line-height: 15px;
       text-align: center;
       margin-bottom: 15px; }
-    .b01 .b01__form .sup {
-      color: #3d3d3d;
-      font-size: 11px;
-      text-align: center; }
     .b01 .b01__form .btn {
       width: 100%; }
 
@@ -2533,6 +2593,7 @@ label {
     text-align: center;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
     -webkit-border-radius: 0 5px 5px 0;
     -moz-border-radius: 0 5px 5px 0;
     -ms-border-radius: 0 5px 5px 0;
@@ -2996,13 +3057,13 @@ label {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    padding-top: 85px;
     position: absolute; }
   .b09 .address {
+    top: 85px;
+    left: 15px;
     width: 270px;
     background: #fff;
-    position: relative;
+    position: absolute;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
@@ -3043,7 +3104,57 @@ label {
 
 .b10 {
   height: 320px;
-  background: #fff; }
+  background: #fff;
+  padding-top: 30px;
+  font-family: "Roboto", sans-serif; }
+  .b10 .column {
+    float: left;
+    width: 330px; }
+    .b10 .column.pull-right {
+      width: 290px;
+      padding-top: 30px; }
+    .b10 .column.dev {
+      padding-top: 70px; }
+  .b10 .b10__logo {
+    margin-bottom: 20px; }
+  .b10 .copy {
+    color: #161616;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-bottom: 15px; }
+  .b10 .b10__contact {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .b10 .b10__contact li {
+      color: #595959;
+      font-size: 14px;
+      font-weight: 300; }
+      .b10 .b10__contact li strong {
+        color: #383838;
+        font-weight: 500; }
+      .b10 .b10__contact li:first-child {
+        color: #383838;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 5px; }
+  .b10 .call-title {
+    color: #383838;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px; }
+  .b10 .b10__tel {
+    color: #000;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: "UniSansHeavyCAPS-Regular"; }
+  .b10 .btn {
+    width: 100%; }
 
 /* Base styles
    ========================= */

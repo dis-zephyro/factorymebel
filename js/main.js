@@ -35,10 +35,21 @@ $('.hotel .nav-next').click(function(){
 });
 
 
-$(".product a").fancybox({
-    'padding' : 0
+//  Modal
+
+$(".btn-modal").fancybox({
+    'padding'    : 0,
+    'tpl'        : {
+        closeBtn : '<a title="Close" class="btn_close" href="javascript:;"></a>'
+    }
 });
 
+$(".product a").fancybox({
+    'padding' : 0,
+    'tpl'        : {
+        closeBtn : '<a title="Close" class="btn_close" href="javascript:;"></a>'
+    }
+});
 
 
 jQuery(document).ready(function () {
@@ -85,3 +96,42 @@ function init(){
     myMap.behaviors.disable('multiTouch');
     myMap.geoObjects.add(myPlacemark);
 }
+
+
+// ----- Маска ----------
+jQuery(function($){
+    $("input[name='phone']").mask("+7(999) 999-9999");
+});
+
+
+$(document).ready(function() {
+
+    $('.bnt-send').click(function() {
+
+        $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
+        var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
+        if(answer != false)
+        {
+            var $form = $(this).closest('form'),
+                name    =     $('input[name="name"]', $form).val(),
+                type    =     $('input[name="type"]', $form).val(),
+                phone   =     $('input[name="phone"]', $form).val(),
+                form   =     $('input[name="form"]', $form).val();
+            console.log(name, phone, form, type);
+            $.ajax({
+                type: "POST",
+                url: "form-handler.php",
+                data: {name: name, phone: phone, form:form, type:type}
+            }).done(function(msg) {
+                console.log(name, phone, form, type);
+                document.location.replace('http://livebz.ru?check='+type);
+
+                $('form').find('input[type=text], textarea').val('');
+                console.log('удачно');
+                $.fancybox.open('#done', 'closeBtn : false');
+                setTimeout("$.fancybox.close()", 3000);
+            });
+        }
+    });
+
+});
