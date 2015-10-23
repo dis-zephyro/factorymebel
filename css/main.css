@@ -265,6 +265,8 @@
     background: url("../img/icon_user.png") 12px 50% no-repeat; }
   .form-control.form-phone {
     background: url("../img/icon_phone.png") 12px 50% no-repeat; }
+  .form-control.form-email {
+    background: url("../img/icon_email.png") 12px 50% no-repeat; }
 
 .red .form-control {
   border-color: #ff0000; }
@@ -2850,6 +2852,7 @@ label {
 
 .b05 {
   padding-top: 50px;
+  overflow: hidden;
   padding-bottom: 50px;
   background: #f3f0e9; }
   .b05 h2 {
