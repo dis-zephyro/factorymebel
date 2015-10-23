@@ -18,20 +18,20 @@
     
     <body>
 
-        <section class="b01">
+        <section class="b01" id="top">
             <div class="container">
                 <div class="b01__top">
                     <div class="logo"></div>
                     <span>Офисная и гостиничная мебель<br/>от производителя в Москве</span>
-                    <div class="b01__phone">+7 499 699 40 48</div>
+                    <a href="tel:+7 499 699 40 48" class="b01__phone">+7 499 699 40 48</a>
                 </div>
                 <nav class="topnav clearfix">
                     <ul class="clearfix">
-                        <li><a href="#">Продукция</a></li>
-                        <li><a href="#">Производство</a></li>
-                        <li><a href="#">Почему мы</a></li>
-                        <li><a href="#">Как мы работаем</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#one">Продукция</a></li>
+                        <li><a href="#two">Производство</a></li>
+                        <li><a href="#three">Почему мы</a></li>
+                        <li><a href="#four">Как мы работаем</a></li>
+                        <li><a href="#five">Контакты</a></li>
                     </ul>
                     <a href="#modal_one" class="btn-top btn-modal">Получить консультацию менеджера</a>
                 </nav>
@@ -68,7 +68,7 @@
             </div>
         </section>
 
-        <section class="b02">
+        <section class="b02" id="one">
             <div class="container">
                 <ul class="advantage clearfix">
                     <li class="item1">
@@ -176,13 +176,13 @@
                 <div class="title-more">и ЭТО ДАЛЕКО НЕ ВСЕ</div>
                 <div class="sub-title">Получите полный каталог нашей продукции прямо сейчас</div>
                 <div class="clearfix">
-                    <a href="#" class="btn btn-green btn-office btn-modal pull-left">Получить каталог для офисов</a>
-                    <a href="#" class="btn btn-green btn-hotel btn-modal pull-right">Получить каталог для гостиниц</a>
+                    <a href="#modal_four" class="btn btn-green btn-office btn-modal pull-left">Получить каталог для офисов</a>
+                    <a href="#modal_four" class="btn btn-green btn-hotel btn-modal pull-right">Получить каталог для гостиниц</a>
                 </div>
             </div>
         </section>
 
-        <section class="b03">
+        <section class="b03" id="two">
             <div class="container">
                 <h2>Собственное производство</h2>
                 <div class="b03__text">Позволяет нам делать Вам выгодные предложния, и отслеживать качество продукции на каждом этапе производства</div>
@@ -212,7 +212,7 @@
             </div>
         </section>
 
-        <section class="b04">
+        <section class="b04" id="three">
             <h2>Клиенты нашей компании</h2>
             <ul class="partners clearfix" id="makeMeScrollable">
                 <li>
@@ -334,7 +334,7 @@
             </div>
         </section>
 
-        <section class="b07">
+        <section class="b07" id="four">
             <div class="container">
                 <h2>КАК мы работаем</h2>
                 <ul class="work clearfix">
@@ -373,7 +373,7 @@
             </div>
         </section>
 
-        <section class="b09">
+        <section class="b09" id="five">
             <div id="map"></div>
             <div class="b09__content">
                 <div class="container">
@@ -398,7 +398,7 @@
                         </ul>
                         <div class="address__bottom">
                             <span>Есть вопросы?</span>
-                            <a href="#" class="btn btn-orange btn-modal">Задать вопрос</a>
+                            <a href="#modal_five" class="btn btn-orange btn-modal">Задать вопрос</a>
                         </div>
                     </div>
                 </div>
@@ -419,15 +419,18 @@
                     </ul>
                 </div>
                 <div class="column text-center dev">
-                    <img src="img/dev_logo.png" alt="">
+                    <a target="_blank" href="http://livebz.ru/">
+                        <img src="img/dev_logo.png" alt="">
+                    </a>
                 </div>
                 <div class="column pull-right">
                     <div class="call-title">По всем вопросам звоните</div>
-                    <div class="b10__tel">+7 499 699 40 48</div>
+                    <a href="tel:+7 499 699 40 48" class="b10__tel">+7 499 699 40 48</a>
                     <a href="#modal_one" class="btn btn-orange btn-micro btn-modal">Получить консультацию менеджера</a>
                 </div>
             </div>
         </section>
+        <a href="#top" class="btn-up"></a>
 
         <div class="hide">
 
@@ -495,6 +498,53 @@
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-orange btn-form btn-submit bnt-send">Посетить производство</button>
+                    </div>
+                    <div class="sup text-center">Ваши данные не будут переданны 3-м лицам.</div>
+                </form>
+            </div>
+
+            <!-- Modal Four -->
+            <div class="modal-box" id="modal_four">
+                <div class="form__title">
+                    Оставьте заявку
+                    <span>на получение каталога продукции</span>
+                </div>
+                <form class="form" name="form" method="POST" action="javascript:void(0);">
+                    <input type="hidden" name="form" class="hide" value="получение каталога продукции">
+                    <input type="hidden" name="type" class="hide" value="4">
+                    <div class="form-group valid name none required">
+                        <input type="text" class="form-control form-name" name="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group valid phone none required">
+                        <input type="text" name="phone" class="form-control form-phone"  placeholder="+7(123)456-78-90">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-orange btn-form btn-submit bnt-send">Заказать каталог</button>
+                    </div>
+                    <div class="sup text-center">Ваши данные не будут переданны 3-м лицам.</div>
+                </form>
+            </div>
+
+            <!-- Modal Five -->
+            <div class="modal-box" id="modal_five">
+                <div class="form__title">
+                    Задайте вопрос
+                    <span>И наш специалист ответит вам в кратчайшее время</span>
+                </div>
+                <form class="form" name="form" method="POST" action="javascript:void(0);">
+                    <input type="hidden" name="form" class="hide" value="Задайте вопрос">
+                    <input type="hidden" name="type" class="hide" value="5">
+                    <div class="form-group valid name none required">
+                        <input type="text" class="form-control form-name" name="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group valid phone none required">
+                        <input type="text" name="phone" class="form-control form-phone"  placeholder="+7(123)456-78-90">
+                    </div>
+                    <div class="form-group valid name none required">
+                        <textarea class="form-control" name="message" placeholder="Ваш вопрос" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-orange btn-form btn-submit bnt-send">Заказать каталог</button>
                     </div>
                     <div class="sup text-center">Ваши данные не будут переданны 3-м лицам.</div>
                 </form>

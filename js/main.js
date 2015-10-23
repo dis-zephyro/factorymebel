@@ -1,3 +1,27 @@
+$('.topnav li a').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str, 500, {offset:0 });
+    return false;
+});
+
+$('.btn-up').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str, 500, {offset:0 });
+    return false;
+});
+
+$(function() {
+    $(".btn-up").hide();
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 200) {
+            $('.btn-up').fadeIn();
+        } else {
+            $('.btn-up').fadeOut();
+        }
+    });
+});
+
+
 //  Slider
 
 $('.office ul').slick({
@@ -7,6 +31,12 @@ $('.office ul').slick({
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1
+});
+
+$('.header__nav li a').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str, 500, {offset:-115});
+    return false;
 });
 
 $('.office .nav-prev').click(function(){
@@ -46,6 +76,14 @@ $(".btn-modal").fancybox({
 
 $(".product a").fancybox({
     'padding' : 0,
+    'tpl'        : {
+        closeBtn : '<a title="Close" class="btn_close" href="javascript:;"></a>'
+    }
+});
+
+$(".reply a").fancybox({
+    'maxWidth'   : 600,
+    'padding'    : 0,
     'tpl'        : {
         closeBtn : '<a title="Close" class="btn_close" href="javascript:;"></a>'
     }
@@ -116,15 +154,15 @@ $(document).ready(function() {
                 name    =     $('input[name="name"]', $form).val(),
                 type    =     $('input[name="type"]', $form).val(),
                 phone   =     $('input[name="phone"]', $form).val(),
-                form   =     $('input[name="form"]', $form).val();
-            console.log(name, phone, form, type);
+                form   =     $('input[name="form"]', $form).val(),
+                message   =     $('textarea[name="message"]', $form).val();
+            console.log(name, phone, form, type, message);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, form:form, type:type}
+                data: {name: name, phone: phone, form:form, type:type, message:message}
             }).done(function(msg) {
-                console.log(name, phone, form, type);
-             //   document.location.replace('http://livebz.ru?check='+type);
+                document.location.replace('http://xn--90ahbyb1c7c.xn--p1ai/?check='+type);
 
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');

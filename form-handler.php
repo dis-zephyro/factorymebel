@@ -3,6 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $form = $_POST['form'];
     $name = $_POST['name'];
     $phone = $_POST['phone'];
+    $message = $_POST['message'];
 
 
 	
@@ -11,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $msg = "<strong>Заголовок формы:</strong> $form<br/>";
     if(isset($name)){$msg .= "<strong>Имя:</strong> $name <br/>";}
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
+    if(isset($message)){$msg .= "<strong>Вопрос:</strong> $message <br/>";}
 
 
     $mail = new PHPMailer();

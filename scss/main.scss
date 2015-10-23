@@ -95,3 +95,18 @@ ul {
     padding: 0;
     list-style: none;
 }
+
+
+.btn-up {
+    bottom: 60px;
+    right: 30px;
+    width: 54px;
+    height: 54px;
+    position: fixed;
+    cursor: pointer;
+    background: url("../img/btn_up.png") 0 0 no-repeat;
+
+    &:hover {
+        background-position: 0 -54px;
+    }
+}
