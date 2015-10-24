@@ -155,20 +155,17 @@ $(document).ready(function() {
                 type    =     $('input[name="type"]', $form).val(),
                 phone   =     $('input[name="phone"]', $form).val(),
                 email   =     $('input[name="email"]', $form).val(),
-                form   =     $('input[name="form"]', $form).val(),
-                message   =     $('textarea[name="message"]', $form).val();
+                form    =     $('input[name="form"]', $form).val(),
+                message =     $('textarea[name="message"]', $form).val();
             console.log(name, phone, form, type, message, email);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
                 data: {name: name, phone: phone, form:form, type:type, email:email, message:message}
             }).done(function(msg) {
-                document.location.replace('http://xn--90ahbyb1c7c.xn--p1ai/?check='+type);
-
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
-                $.fancybox.open('#done', 'closeBtn : false');
-                setTimeout("$.fancybox.close()", 3000);
+                document.location.href = "http://xn--90ahbyb1c7c.xn--p1ai/done.html";
             });
         }
     });
