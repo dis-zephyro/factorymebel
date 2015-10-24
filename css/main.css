@@ -2656,12 +2656,8 @@ label {
       .b02 .advantage li.item4 {
         background: url("../img/b02_item4.jpg") 0 0 no-repeat; }
   .b02 h2 {
-    background-color: #8f4b00;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.3);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+    color: rgba(140, 99, 53, 0.8);
+    text-shadow: 1px 2px 3px #ffdfbb, 0 0 0 #000, 1px 2px 3px #ffdfbb;
     margin-bottom: 50px; }
   .b02 .product-block {
     height: 472px;
@@ -2720,17 +2716,13 @@ label {
   .b02 .title-more {
     font-size: 65px;
     line-height: 70px;
-    color: transparent;
     text-align: center;
     margin-bottom: 15px;
     position: relative;
     font-family: "UniSansHeavyCAPS-Regular";
     text-transform: uppercase;
-    background-color: #8f4b00;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.3);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text; }
+    color: rgba(140, 99, 53, 0.8);
+    text-shadow: 1px 2px 3px #ffdfbb, 0 0 0 #000, 1px 2px 3px #ffdfbb; }
     .b02 .title-more:before {
       top: 43px;
       left: 38px;
@@ -2750,16 +2742,12 @@ label {
       position: absolute;
       background: url("../img/title_arrow.png") -107px 0 no-repeat; }
   .b02 .sub-title {
+    color: #946b3d;
     font-size: 22px;
     font-weight: 600;
     line-height: 30px;
     text-align: center;
-    margin-bottom: 40px;
-    background-color: #8f4b00;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.3);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text; }
+    margin-bottom: 40px; }
 
 .b03 {
   color: #545454;
@@ -2980,13 +2968,8 @@ label {
   padding-top: 60px;
   background: url("../img/b07_bg.jpg") top center no-repeat; }
   .b07 h2 {
-    background-color: #8f4b00;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.3);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    margin-bottom: 80px; }
+    color: rgba(140, 99, 53, 0.8);
+    text-shadow: 1px 2px 3px #ffdfbb, 0 0 0 #000, 1px 2px 3px #ffdfbb; }
   .b07 .work {
     margin: 0;
     list-style: none;

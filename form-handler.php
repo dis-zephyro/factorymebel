@@ -11,9 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require 'class.phpmailer.php';
     $thm = 'Вам отправлено сообщение с сайта factorymebel - ' . $form;
     $msg = "<strong>Форма:</strong> $form <br/>";
-    if(isset($phone)){$msg .= "<strong>Имя:</strong> $name <br/>";}
+    if(isset($name)){$msg .= "<strong>Имя:</strong> $name <br/>";}
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
-    if(isset($address)){$msg .= "<strong>Email:</strong> $email <br/>";}
+    if(isset($email)){$msg .= "<strong>Email:</strong> $email <br/>";}
     if(isset($message)){$msg .= "<strong>Вопрос:</strong> $message <br/>";}
 
 

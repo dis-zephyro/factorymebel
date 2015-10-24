@@ -157,11 +157,11 @@ $(document).ready(function() {
                 email   =     $('input[name="email"]', $form).val(),
                 form    =     $('input[name="form"]', $form).val(),
                 message =     $('textarea[name="message"]', $form).val();
-            console.log(name, phone, form, type, message, email);
+            console.log(name, phone, email, form, type, message);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, form:form, type:type, email:email, message:message}
+                data: {name: name, phone: phone, email:email, form:form, type:type, message:message}
             }).done(function(msg) {
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');

@@ -49,12 +49,8 @@
 	}
 
 	h2 {
-		background-color: #8f4b00;
-		color: transparent;
-		text-shadow: 0px 2px 3px rgba(255,255,255,0.3);
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
+		color: rgba(140, 99, 53, .8);
+		text-shadow: 1px 2px 3px #ffdfbb, 0 0 0 #000, 1px 2px 3px #ffdfbb;
 		margin-bottom: 50px;
 	}
 
@@ -145,17 +141,14 @@
 	.title-more {
 		font-size: 65px;
 		line-height: 70px;
-		color: transparent;
+
 		text-align: center;
 		margin-bottom: 15px;
 		position: relative;
 		font-family: $font-heavy;
 		text-transform: uppercase;
-		background-color: #8f4b00;
-		text-shadow: 0px 2px 3px rgba(255,255,255,0.3);
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
+		color: rgba(140, 99, 53, .8);
+		text-shadow: 1px 2px 3px #ffdfbb, 0 0 0 #000, 1px 2px 3px #ffdfbb;
 
 		&:before {
 			top: 43px;
@@ -181,15 +174,11 @@
 	}
 
 	.sub-title {
+		color: #946b3d;
 		font-size: 22px;
 		font-weight: 600;
 		line-height: 30px;
 		text-align: center;
 		margin-bottom: 40px;
-		background-color: #8f4b00;
-		text-shadow: 0px 2px 3px rgba(255,255,255,0.3);
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
 	}
 }
