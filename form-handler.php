@@ -1,22 +1,26 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $form = $_POST['form'];
     $name = $_POST['name'];
     $phone = $_POST['phone'];
-    $address = $_POST['address'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
 
 	
     require 'class.phpmailer.php';
-    $thm = "Вам отправлено сообщение с " . $_SERVER['SERVER_NAME'];
-    $msg = "<strong>Имя:</strong> $name <br/>";
+    $thm = 'Вам отправлено сообщение с сайта factorymebel - ' . $form;
+    $msg = "<strong>Форма:</strong> $form <br/>";
+    if(isset($phone)){$msg .= "<strong>Имя:</strong> $name <br/>";}
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
-    if(isset($address)){$msg .= "<strong>Адрес:</strong> $address <br/>";}
+    if(isset($address)){$msg .= "<strong>Email:</strong> $email <br/>";}
+    if(isset($message)){$msg .= "<strong>Вопрос:</strong> $message <br/>";}
 
 
     $mail = new PHPMailer();
     $mail->From = 'noreply@'. $_SERVER['SERVER_NAME']; // от кого
-    $mail->FromName = $_SERVER['SERVER_NAME']; // от кого
-    $mail->AddAddress('factorymebel@yandex.ru', 'ф-мебель.рф'); // кому - адрес, Имя
+    $mail->FromName = 'factorymebel'; // от кого
+    $mail->AddAddress('factorymebel@yandex.ru', 'factorymebel'); // кому - адрес, Имя
 
     $mail->IsHTML(true); // выставляем формат письма HTML
     $mail->Subject = $thm; // тема письма
