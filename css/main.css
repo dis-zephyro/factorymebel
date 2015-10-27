@@ -164,12 +164,12 @@
 .btn-green {
   font-size: 23px;
   padding: 17px 30px;
-  border-bottom-color: #697e10;
-  background-image: -webkit-linear-gradient(top, #c4d564 0%, #9db93d 100%);
-  background-image: -o-linear-gradient(top, #c4d564 0%, #9db93d 100%);
-  background-image: linear-gradient(to bottom, #c4d564 0%, #9db93d 100%);
+  border-bottom-color: #7c4e28;
+  background-image: -webkit-linear-gradient(top, #f4bd1f 0%, #ec9213 100%);
+  background-image: -o-linear-gradient(top, #f4bd1f 0%, #ec9213 100%);
+  background-image: linear-gradient(to bottom, #f4bd1f 0%, #ec9213 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFC4D564', endColorstr='#FF9DB93D', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF4BD1F', endColorstr='#FFEC9213', GradientType=0);
   text-shadow: 0px 1px 3px #697e10; }
   .btn-green:after {
     top: 0;
@@ -179,17 +179,17 @@
     z-index: 20;
     content: ' ';
     position: absolute;
-    border: 1px solid #c7e622;
+    border: 1px solid #ebc72a;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     border-radius: 6px; }
   .btn-green:hover {
-    background-image: -webkit-linear-gradient(top, #bece5e 0%, #93af39 100%);
-    background-image: -o-linear-gradient(top, #bece5e 0%, #93af39 100%);
-    background-image: linear-gradient(to bottom, #bece5e 0%, #93af39 100%);
+    background-image: -webkit-linear-gradient(top, #ebc72a 0%, #dfa31a 100%);
+    background-image: -o-linear-gradient(top, #ebc72a 0%, #dfa31a 100%);
+    background-image: linear-gradient(to bottom, #ebc72a 0%, #dfa31a 100%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFBECE5E', endColorstr='#FF93AF39', GradientType=0); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEBC72A', endColorstr='#FFDFA31A', GradientType=0); }
   .btn-green:active {
     border-bottom-color: #93af39; }
     .btn-green:active:after {

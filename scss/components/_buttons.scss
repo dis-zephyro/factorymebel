@@ -46,8 +46,8 @@
 .btn-green {
 	font-size: 23px;
 	padding: 17px 30px;
-	border-bottom-color: #697e10;
-	@include gradient-vertical(#c4d564, #9db93d);
+	border-bottom-color: #7c4e28;
+	@include gradient-vertical(#f4bd1f, #ec9213);
 	text-shadow: 0px 1px 3px rgba(105, 126, 16, 1);
 
 	&:after {
@@ -58,12 +58,12 @@
 		z-index: 20;
 		content: ' ';
 		position: absolute;
-		border: 1px solid #c7e622;
+		border: 1px solid #ebc72a;
 		@include border-radius(6px);
 	}
 
 	&:hover {
-		@include gradient-vertical(#bece5e, #93af39);
+		@include gradient-vertical(#ebc72a, #dfa31a);
 	}
 
 	&:active {
